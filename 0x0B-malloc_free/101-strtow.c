@@ -20,6 +20,7 @@ int word_len(char *str)
 		l++;
 		i++;
 	}
+
 	return (l);
 }
 
@@ -88,7 +89,7 @@ char **strtow(char *str)
 		}
 
 		for (l2 = 0; l2 < l1; l2++)
-			strings[w][l2] = str[i++];
+			strings[w1][l2] = str[i++];
 		strings[w1][l2] = '\0';
 	}
 	strings[w1] = NULL;
